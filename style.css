@@ -130,7 +130,7 @@ section {
 }
 
 /* Timeline cards: dark background, simple border, flex column */
-section > div {
+section > carddiv {
   width: 95vw;
   min-width: 13em;
   max-width: 98vw;
@@ -149,12 +149,12 @@ section > div {
   margin: 0 auto;
   margin-bottom: 1em;
 }
-section > div:hover {
+section > carddiv:hover {
   border: 2.5px solid #0068b5;
 }
 
 /* Card image: tint overlay for better text visibility */
-section > div img {
+section > carddiv img {
   width: 100%;
   height: 8em;
   object-fit: cover;
@@ -165,7 +165,7 @@ section > div img {
   position: relative;
   z-index: 1;
 }
-section > div .img-tint {
+section > carddiv .img-tint {
   position: absolute;
   top: 0;
   left: 0;
@@ -179,7 +179,7 @@ section > div .img-tint {
 }
 
 /* Hide the paragraph by default and position it over the entire card */
-section > div p {
+section > carddiv p {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -208,20 +208,20 @@ section > div p {
 }
 
 /* On hover, show the paragraph and the tint, hide the image visually */
-section > div:hover img {
+section > carddiv:hover img {
   opacity: 0.3;
 }
-section > div:hover .img-tint {
+section > carddiv:hover .img-tint {
   opacity: 1;
 }
-section > div:hover p {
+section > carddiv:hover p {
   opacity: 1;
   pointer-events: auto;
   display: flex;
 }
 
 /* Card headings: Intel professional blue and gold, bold and clear */
-section > div h2 {
+section > carddiv h2 {
   color: #0068b5;
   font-family: "Source Code Pro", monospace;
   font-size: 1.3em;
@@ -230,7 +230,7 @@ section > div h2 {
   margin: 0.5em 0 0 0;
   text-shadow: none;
 }
-section > div h3 {
+section > carddiv h3 {
   color: #ffc107;
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 1.1em;
@@ -250,7 +250,7 @@ section > div h3 {
     border-radius: 2em;
     min-height: 0;
   }
-  section > div {
+  section > carddiv {
     flex: 0 0 23.75em;
     min-width: 17.5em;
     max-width: 59.375em;
@@ -258,11 +258,11 @@ section > div h3 {
     padding: 2em 1.5em;
     font-size: 1.15em;
   }
-  section > div img,
-  section > div .img-tint {
+  section > carddiv img,
+  section > carddiv .img-tint {
     height: 13.75em;
   }
-  section > div p {
+  section > carddiv p {
     font-size: 1.15em;
     padding: 2em 1.5em;
   }
@@ -270,12 +270,12 @@ section > div h3 {
 
 /* Responsive: decrease font size if space is needed */
 @media (max-width: 1200px) {
-  section > div p {
+  section > carddiv p {
     font-size: 1em;
   }
 }
 @media (max-width: 900px) {
-  section > div p {
+  section > carddiv p {
     font-size: 0.95em;
   }
 }
@@ -290,7 +290,7 @@ section > div h3 {
     padding: 0.5em 0.2em;
     border-radius: 0;
   }
-  section > div {
+  section > carddiv {
     width: 98vw;
     min-width: 0;
     max-width: 99vw;
@@ -312,12 +312,12 @@ section > div h3 {
     margin-right: 2vw;
     padding-bottom: 2px;
   }
-  section > div img,
-  section > div .img-tint {
+  section > carddiv img,
+  section > carddiv .img-tint {
     height: 7em;
     border-radius: 0.5em;
   }
-  section > div p {
+  section > carddiv p {
     font-size: 0.8em;
     padding: 0.5em 0.2em;
   }
