@@ -6,10 +6,10 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  width: 100vw;
+  min-height: 100%;
+  width: 100%;
   box-sizing: border-box;
-  background: #242222;
+  background: #242222 !important;
 }
 
 /* Header with background image and centered content */
@@ -53,6 +53,11 @@ header > div {
   flex: 1 1 auto;
   min-height: 0;
   gap: 1em;
+}
+
+.bg-primary{
+  background: linear-gradient(120deg, #76adf9 20%, #2b9738 100%); 
+  color: rgb(16, 16, 16);
 }
 header * {
   font-size: 1.45em; /* Make all header text bigger */
