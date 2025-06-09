@@ -154,9 +154,11 @@ section > carddiv {
   position: relative;
   margin: 0 auto;
   margin-bottom: 1em;
+  transition: opacity 0.3s ease-in-out, transform 0.3s; /* Add transform transition */
 }
 section > carddiv:hover {
   border: 2.5px solid #0068b5;
+  transform: scale(1.03); /* Slightly increase size */
 }
 
 /* Card image: tint overlay for better text visibility */
@@ -170,6 +172,7 @@ section > carddiv img {
   display: block;
   position: relative;
   z-index: 1;
+  transition: opacity 0.3s; /* Smooth fade for image */
 }
 section > carddiv .img-tint {
   position: absolute;
@@ -182,6 +185,7 @@ section > carddiv .img-tint {
   z-index: 2;
   pointer-events: none;
   opacity: 0;
+  transition: opacity 0.3s; /* Smooth fade for tint */
 }
 
 /* Hide the paragraph by default and position it over the entire card */
@@ -211,6 +215,7 @@ section > carddiv p {
   flex-grow: 1;
   line-height: 1.2;
   word-break: break-word;
+  transition: opacity 0.3s; /* Smooth fade for paragraph */
 }
 
 /* On hover, show the paragraph and the tint, hide the image visually */
@@ -283,6 +288,23 @@ section > carddiv h3 {
   width: 100%;
   max-width: 400px; /* Keep form a nice size on large screens */
   margin: 0 auto;
+}
+
+/* Make the newsletter heading bigger for emphasis */
+subtonews h2 {
+  font-size: 2em;           /* Larger font size for the heading */
+  margin-bottom: 1.5em;     /* Extra space below the heading */
+  font-weight: bold;        /* Make it bold */
+}
+
+/* Add more vertical space between all elements in the newsletter section */
+subtonews > * {
+  margin-bottom: 2em; /* More space below each direct child */
+}
+
+/* Add even more space below the form fields */
+subtonews form .mb-3 {
+  margin-bottom: 2em;
 }
 
 /* Responsive: horizontal scroll for larger screens */
