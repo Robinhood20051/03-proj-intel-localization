@@ -59,6 +59,7 @@ header > div {
   background: linear-gradient(120deg, #76adf9 20%, #2b9738 100%); 
   color: rgb(16, 16, 16);
 }
+
 header * {
   font-size: 1.45em; /* Make all header text bigger */
   margin-bottom: 18px;
